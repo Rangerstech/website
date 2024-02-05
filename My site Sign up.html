@@ -1,0 +1,91 @@
+<!--Sign up -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-up</title>
+		<style type="text/css">
+          body{background-color: skyblue; font-family:Trebuchet MS;}
+       	  p{font-family:Trebuchet MS; color:darkblue;}
+       	  hr.THICK {border: 6px solid darkcyan; border-radius: 10px;}
+       	  h3{font-family:Trebuchet MS; color:darkblue;}
+      	</style>
+      	
+</head>
+<body>
+	<center>
+	<header>
+		<h1 style="color:darkblue; font-size:50px; font-family:Trebuchet MS;">Sign-up</h1>
+	</header>
+	<form action=".php" method="post" novalidate>
+			<div>
+			<label><h3>Username</h3></label>
+			<input type="text" placeholder="&quot;Not your real Name&quot;" autofocus>
+		</div>
+		<br>
+		<div>
+		<label><h3>Email</h3></label>
+			<input type="email" required placeholder="&quot;Example@gmail.com&quot;">
+		</div>
+		<br>
+		<div>
+			<label><h3>Password</h3></label>
+			<input type="password" required placeholder="&quot;Minimum 8 Character&quot;" minlength="8" maxlength="20">
+		</div>
+		<br>
+		<p><h3>Gender<h3></p>
+		<div>
+			<input id="M" type="radio" name="os">
+			<label for="M">Male</label>
+			<input id="F" type="radio" name="os">
+			<label for="F">Female</label>
+		</div>
+		<br>
+		<p><h3>Coding Types<h3></p>
+		<div>
+			<input id="H" type="checkbox" name="code">
+			<label for="H">HTML</label>
+			<input id="J" type="checkbox" name="code">
+			<label for="J">Java</label>
+		</div>
+		<br>
+		<p>When were you born?</p>
+		<div>
+			<input type="date" name="date">
+		</div>
+		<br>
+		<p>The Language you speak is?</p>
+		<div>
+		<label>Choose a Language:</label>
+      	<select name="Language">
+      		<optgroup label="Arabic">
+      			<option value="Arabic">Arabic "Original"</option>
+      			<option value="Arabic">Arabic "Egypt"</option>
+      			<option value="Arabic">Arabic "Oman"</option>
+      		</optgroup>
+      		<optgroup label="English">
+      			<option value="English">English "Original"</option>
+      			<option value="English">English "American"</option>
+      			<option value="English">English "British"</option>
+      		</optgroup>
+      		<option value="French">French</option>
+      		<option value="German">German</option>
+      	</select>
+		</div>
+		<br>
+		<div>
+			<input type="submit" value="Sign-up">
+		</div>
+		<br>
+		<div>
+			<input type="submit" value="Sign-up">
+		</div>
+		<p>OR</p>
+		<div>
+			<input type="submit" value="Log in">
+		</div>
+	</form>
+	</center>
+</body>
+</html>
